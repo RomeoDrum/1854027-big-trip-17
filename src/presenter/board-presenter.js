@@ -1,5 +1,5 @@
 import TripEventEditView from '../view/trip-event-edit-view.js';
-import TripEventListView  from '../view/trip-event-item.js';
+import TripEventListView  from '../view/trip-event-list-view';
 import TripEventItemView from '../view/trip-event-item.js';
 import {render} from '../render.js';
 
@@ -14,7 +14,7 @@ export default class BoardPresenter {
     render(this.editFormComponent, this.tripEventListComponent.getElement());
 
     for (let i = 0; i < 3; i++) {
-      render(new TripEventItemView (), this.container);
+      render(new TripEventItemView (), this.tripEventListComponent.getElement());
     }
 
   };
