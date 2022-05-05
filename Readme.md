@@ -1,7 +1,7 @@
 # Проект «Большое путешествие»
 
 * Студент: [Роман Голивец](https://up.htmlacademy.ru/ecmascript/17/user/1854027).
-* Наставник: [Иван Долгов] (https://htmlacademy.ru/profile/id2047221).
+* Наставник: [Иван Долгов](https://htmlacademy.ru/profile/id2047221).
 
 ---
 
