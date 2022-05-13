@@ -7,14 +7,18 @@ export default class BoardPresenter {
   editFormComponent = new TripEventEditView();
   tripEventListComponent = new TripEventListView();
 
-  init = (container) => {
+  init = (container, pointsModel) => {
     this.container = container;
+    this.pointsModel = pointsModel;
+    this.destinationPoints = [this.pointsModel.getPoints()];
+
+    console.log(destinationPoints);
 
     render(this.tripEventListComponent, this.container);
     render(this.editFormComponent, this.tripEventListComponent.getElement());
 
-    for (let i = 0; i < 3; i++) {
-      render(new TripEventItemView (), this.tripEventListComponent.getElement());
+    for (let i = 0; i < this.destinationPoints.length; i++) {
+      render(new TripEventItemView (this.destinationPoints[i]), this.tripEventListComponent.getElement());
     }
 
   };
