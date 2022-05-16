@@ -3,7 +3,7 @@
 import {getRandomInteger} from '../util.js';
 
 const generateTypePoint = () => {
-  typesPoint = [
+  const typesPoint = [
     'taxi',
     'bus',
     'train',
@@ -21,7 +21,7 @@ const generateTypePoint = () => {
 };
 
 const generateDestination = () => {
-  destinationsPoint = [
+  const destinationsPoint = [
     'Amsterdam',
     'Geneva',
     'Rome',
@@ -37,7 +37,7 @@ const generateDestination = () => {
 };
 
 const  generateDescription = () => {
-  descriptionsPoint = [
+  const descriptionsPoint = [
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     'Cras aliquet varius magna, non porta ligula feugiat eget.',
     'Fusce tristique felis at fermentum pharetra.',
