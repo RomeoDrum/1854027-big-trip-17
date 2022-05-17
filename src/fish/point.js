@@ -50,10 +50,39 @@ const  generateDescription = () => {
   return descriptionsPoint[randomIndex];
 };
 
+export const offersPoint = [
+  {
+    id: 1,
+    title: 'Upgrade to a business class',
+    price: 120
+  },
+  {
+    id: 2,
+    title: 'Switch to comfort',
+    price: 100
+  },
+  {
+    id: 3,
+    title: 'Add luggage',
+    price: 100
+  },
+  {
+    id: 4,
+    title: 'Odrer Uber',
+    price: 20
+  },
+  {
+    id: 5,
+    title: 'Rent a Car',
+    price: 200
+  },
+];
+
 export const generatePointDestination = () => ({
   type: generateTypePoint(),
   destinations: generateDestination(),
   descriptions: generateDescription(),
   pictures: 'http://picsum.photos/248/152?r=5',
-  is_favorite: false
+  is_favorite: false,
+  offers: Object.keys(offersPoint),
 });
